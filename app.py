@@ -19,17 +19,17 @@ if hist_button: # al hacer clic en el botón
 scatter_button = st.button('Construir gráfico de dispersión')
 
 if scatter_button:
-    st.write('Creación de un gráfico de dispersión para el precio vs año del modelo')
+    st.write('Creación de un gráfico de dispersión para el precio vs kilometraje')
 
     # Crear el gráfico de dispersión
     fig = px.scatter(
         car_data,
-        x='model_year',
+        x='odometer',
         y='price',
-        title='Relación entre Precio y Año del Modelo',
-        labels={'model_year': 'Año del Modelo', 'price': 'Precio'},
+        title='Relación entre Precio y Kilometraje',
+        labels={'odometer': 'Kilometraje', 'price': 'Precio'},
         color='condition',  # Diferenciar por condición del vehículo
-        hover_data=['odometer', 'fuel']  # Mostrar datos adicionales al pasar el ratón
+        hover_data=['model_year', 'fuel']  # Mostrar datos adicionales al pasar el ratón
     )
 
     # Mostrar el gráfico interactivo

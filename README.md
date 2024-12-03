@@ -3,6 +3,9 @@ este repositorio contiene el proyecto del sprint 6
 
 Descripción:
 Esta es una app web interactiva hecha con Streamlit. Te ayuda a explorar y ver datos sobre anuncios de autos. Con ella, puedes analizar cosas importantes y ver los datos de forma visual con gráficos interactivos.
+*****************   *********************
+Cabe mencionar que se trabajó con el df limpio.
+*****************   *********************
 
 Funcionalidades:
 Histograma.- Muestra cómo se distribuye el kilometraje (en el odometro) de los autos.
